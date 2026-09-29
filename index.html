@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/assets/icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Weather Dashboard</title>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Weather Dashboard</h1>
+            <button id="themeBtn" aria-label="Toggle dark or light theme">🌙 Dark</button>
+        </header>
+
+        <div class="search-section glass">
+            <div class="search-wrap">
+                <input type="text" id="cityInput" placeholder="Enter city name..." autocomplete="off"
+                    aria-label="City name" />
+                <ul id="suggestions" role="listbox"></ul>
+            </div>
+            <button id="searchBtn">Search</button>
+        </div>
+
+        <div id="errorMsg" class="error glass" role="alert" style="display:none;"></div>
+        <div id="weatherCard" class="weather-card glass" style="display:none;"></div>
+
+        <div class="favorites-section glass">
+            <h3>Favorites</h3>
+            <div id="favoritesList"></div>
+        </div>
+    </div>
+
+    <script>
+
+    </script>
+</body>
+
+</html>
